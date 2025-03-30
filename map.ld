@@ -1,12 +1,11 @@
-
 MEMORY
 {
-    MEM: ORIGIN = 0x0, LENGTH = 0x4000
+    MEM : ORIGIN = 0x0, LENGTH = 0x4000
 }
 
 SECTIONS
 {
-    .text: {
+    .text : {
     *(.vectors*)
     *(.text*)
     } > MEM
